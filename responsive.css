@@ -1,0 +1,26 @@
+/* mobile & tablet */
+@media(max-width:1023px) {
+ 
+
+    
+}
+
+@media(min-width:740px) {
+
+    
+
+}
+
+/* tableb */
+@media(min-width:740px) and (max-width: 1023px) {
+
+
+}
+
+@media (max-width: 740px){
+    .hidden-on-mobile{
+        display: none;
+  }
+
+
+}
