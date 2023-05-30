@@ -10,7 +10,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.less">
+
 
 
  
@@ -208,19 +210,20 @@
             <div class="row modal-dialog modal-lg">
               <div class="col-sm-8 offset-sm-2 col-12 ">
                 <div class="card  modal-content" id="reservationForm">
-                  <div class="modal-header bg-warning"> 
-                    <h5 class="text-center ">Reserve a Table</h5>
+                  <div class="modal-header reserve"> 
+                    <h5 class="text-center  text-white">Reserve a Table</h5>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="card-body">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-12">
-                                    <div class="row">
+                                    
+                                    <div class="row  g-0 ">
                                         <div class="col-12 col-sm-3">
                                             <label for="guests" class="guests-label">Number of Guests:</label>
                                         </div>
-                                        <div class="col-12 col-sm-9">
+                                        <div class="col-12 col-sm-9 ml-0">
                                             <div class="form-check form-check-inline ">
                                                 <input class="form-check-input" type="radio" name="guests" id="1" value="1">
                                                 <label class="form-check-label" for="1">1</label>
@@ -255,23 +258,26 @@
                                     <div class="col-12 col-sm-3">
                                         <label for="" class="">Section:</label>
                                     </div>
+                                   
+                                        
+                                        <span class="bg-success ml-3">
+                                            <input type="radio" hidden class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                                            <label class="btn text-white "  for="success-outlined">Non-smoking</label>
+                                        </span>
+                                        
+                                        <span class="bg-danger">
+                                            <input type="radio" hidden class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                                            <label class="btn text-white" for="danger-outlined">Smoking</label>
+                                        </span>
+                                   
                                  
-                                    <span class="bg-success">
-                                        <input type="radio" hidden class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-                                        <label class="btn text-white "  for="success-outlined">Checked success radio</label>
-                                    </span>
-                                    
-                                    <span class="bg-danger">
-                                        <input type="radio" hidden class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-                                        <label class="btn text-white" for="danger-outlined">Danger radio</label>
-                                    </span>
 
                                     
                                 </div>
                             </div>   
                                 
                             <div class="form-group col-sm-12">
-                                <div class="row">
+                                <div class="row ">
                                     <div class="col-12 col-sm-3">
                                         <label for="datetime" class="">Date and Time:</label>
                                     </div>
@@ -328,11 +334,11 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header model-header-style text-white">
                     <h4 class="modal-title">Login </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body model-body-style">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
