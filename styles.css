@@ -39,7 +39,9 @@ body {
 }
 .carousel, .reserve {
   background: #512DA8;
+  border-radius: 5px;
 }
+
 .carousel .carousel-item {
   height: 300px;
 }
